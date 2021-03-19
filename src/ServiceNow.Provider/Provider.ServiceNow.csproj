@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <None Remove="Resources\servicenow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceNow.Infrastructure\Crawling.ServiceNow.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\servicenow.png" />
+    <EmbeddedResource Include="ServiceNowProviderComponent.config">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CluedIn.Core" />
+    <PackageReference Include="CluedIn.Core.Agent" />
+    <PackageReference Include="CluedIn.Server.Common.WebApi" />
+    <PackageReference Include="CluedIn.Agent" />
+  </ItemGroup>
+</Project>

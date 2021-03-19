@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\ServiceNow.Core\Crawling.ServiceNow.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\ServiceNow.Crawling\Crawling.ServiceNow.csproj" />
+    <ProjectReference Include="..\..\..\src\ServiceNow.Infrastructure\Crawling.ServiceNow.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

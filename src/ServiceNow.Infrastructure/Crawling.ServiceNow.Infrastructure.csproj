@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="ServiceNow.Api"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceNow.Core\Crawling.ServiceNow.Core.csproj" />
+  </ItemGroup>
+</Project>
