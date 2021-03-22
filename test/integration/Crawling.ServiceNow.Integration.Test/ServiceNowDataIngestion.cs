@@ -16,7 +16,7 @@ namespace CluedIn.Crawling.ServiceNow.Integration.Test
             this.output = output;
         }
 
-        [Theory]
+        [Theory(Skip="Requires stubbing")]
         [InlineData("/Provider/Root", 1)]
         //TODO: Add details for the count of entityTypes your test produces
         //[InlineData("SOME_ENTITY_TYPE", 1)]
@@ -30,7 +30,7 @@ namespace CluedIn.Crawling.ServiceNow.Integration.Test
             Assert.Equal(expectedCount, foundCount);
         }
 
-        [Fact]
+        [Fact(Skip="Requires Stubbing")]
         public void EntityCodesAreUnique()
         {
             var count = fixture.ClueStorage.Clues.Count();
@@ -42,6 +42,6 @@ namespace CluedIn.Crawling.ServiceNow.Integration.Test
             Assert.Equal(unique, count);
         }
 
-       
+
     }
 }

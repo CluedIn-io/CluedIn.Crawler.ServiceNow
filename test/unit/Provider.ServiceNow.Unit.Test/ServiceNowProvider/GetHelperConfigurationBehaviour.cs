@@ -41,7 +41,7 @@ namespace CluedIn.Provider.ServiceNow.Unit.Test.ServiceNowProvider
         // TODO Add test for throws arg exception for incorrect data param
 
 
-        [Theory]
+        [Theory(Skip="Requires Stubbing")]
         [InlineAutoData("ApiKey", "ApiKey", "some-value")]
         // TODO add data for other properties that need populating
         // Fill in the values for expected results ....
