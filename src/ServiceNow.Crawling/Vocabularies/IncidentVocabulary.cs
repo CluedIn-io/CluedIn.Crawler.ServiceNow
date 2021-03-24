@@ -75,7 +75,7 @@ namespace CluedIn.Crawling.ServiceNow.Vocabularies
 
 
 
-
+                RouteReason = group.Add(new VocabularyKey("RouteReason", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
 
 
                 ReopenedBy = group.Add(new VocabularyKey("ReopenedBy", VocabularyKeyDataType.DateTime, VocabularyKeyVisibility.Visible));
