@@ -7,7 +7,4 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="ServiceNow.Api" />
-  </ItemGroup>
 </Project>

@@ -48,6 +48,11 @@ namespace CluedIn.Provider.ServiceNow
                 servicenowCrawlJobData.Password = configuration[ServiceNowConstants.KeyName.Password].ToString();
             }
 
+            if (configuration.ContainsKey(ServiceNowConstants.KeyName.BaseUrl))
+            {
+                servicenowCrawlJobData.BaseUrl = configuration[ServiceNowConstants.KeyName.BaseUrl].ToString();
+            }
+
             return await Task.FromResult(servicenowCrawlJobData);
         }
 
@@ -84,6 +89,7 @@ namespace CluedIn.Provider.ServiceNow
                 // add tests to GetHelperConfigurationBehaviour.cs
                 dictionary.Add(ServiceNowConstants.KeyName.Username, servicenowCrawlJobData.Username);
                 dictionary.Add(ServiceNowConstants.KeyName.Password, servicenowCrawlJobData.Password);
+                dictionary.Add(ServiceNowConstants.KeyName.BaseUrl, servicenowCrawlJobData.BaseUrl);
             }
 
             return await Task.FromResult(dictionary);

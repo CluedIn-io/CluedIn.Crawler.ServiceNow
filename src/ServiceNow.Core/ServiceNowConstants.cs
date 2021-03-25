@@ -11,6 +11,7 @@ namespace CluedIn.Crawling.ServiceNow.Core
         {
             public const string Username = nameof(Username);
             public const string Password = nameof(Password);
+            public const string BaseUrl = nameof(BaseUrl);
         }
 
         // TODO Complete the following section
@@ -44,8 +45,14 @@ namespace CluedIn.Crawling.ServiceNow.Core
                     isRequired = true,
                     name = "Password",
                     type = "password"
+                },
+                new Control()
+                {
+                    displayName = "BaseUrl",
+                    isRequired = true,
+                    name = "BaseUrl",
+                    type = "text"
                 }
-
             }
         };
 
