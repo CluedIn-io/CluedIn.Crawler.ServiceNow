@@ -6,7 +6,6 @@ using CluedIn.Crawling.ServiceNow.Core;
 using Newtonsoft.Json;
 using RestSharp;
 using Microsoft.Extensions.Logging;
-using ServiceNow.Api;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -25,13 +24,13 @@ namespace CluedIn.Crawling.ServiceNow.Infrastructure
     {
         private const string BaseUri = "http://sample.com";
 
-        private readonly ILogger<ServiceNowClient> log;
+        private readonly ILogger<ServiceNowClient2> log;
 
         private readonly IRestClient client;
 
         private readonly ServiceNowCrawlJobData _servicenowCrawlJobData;
 
-        public ServiceNowClient2(ILogger<ServiceNowClient> log, ServiceNowCrawlJobData servicenowCrawlJobData, IRestClient client) // TODO: pass on any extra dependencies
+        public ServiceNowClient2(ILogger<ServiceNowClient2> log, ServiceNowCrawlJobData servicenowCrawlJobData, IRestClient client) // TODO: pass on any extra dependencies
         {
             if (servicenowCrawlJobData == null)
             {

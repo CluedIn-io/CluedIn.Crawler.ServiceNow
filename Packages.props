@@ -11,7 +11,6 @@
 
         MUST SPECIFY IN CSPROJ AS <PackageReference Name="<depName>" />
     -->
-    <PackageReference Update="ServiceNow.Api" Version="1.2.27" />
     <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Update="AutoFixture.Xunit2" Version="$(_AutoFixture)" />
     <PackageReference Update="AutoFixture.Idioms" Version="$(_AutoFixture)" />
