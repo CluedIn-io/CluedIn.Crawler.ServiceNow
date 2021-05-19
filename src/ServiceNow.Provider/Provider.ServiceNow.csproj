@@ -3,6 +3,7 @@
     <None Remove="Resources\servicenow.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ServiceNow.Crawling\Crawling.ServiceNow.csproj" />
     <ProjectReference Include="..\ServiceNow.Infrastructure\Crawling.ServiceNow.Infrastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
